@@ -5,6 +5,7 @@ import bucketCreate from './commands/bucket-create.js';
 import bucketList from './commands/bucket-list.js';
 import bucketRemove from './commands/bucket-remove.js';
 import bucketView from './commands/bucket-view.js';
+import objectList from './commands/object-list.js';
 
 const cli = new Command();
 
@@ -19,5 +20,7 @@ cli.addCommand(bucketList);
 cli.addCommand(bucketView);
 cli.addCommand(bucketCreate);
 cli.addCommand(bucketRemove);
+
+cli.addCommand(objectList);
 
 cli.parse(process.argv);

@@ -4,7 +4,7 @@
   "description": "Linode Object Storage CLI Tool.",
   "main": "./bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "keywords": [
     "linode",

@@ -1,6 +1,6 @@
 {
   "name": "linode-storage-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Linode Object Storage CLI Tool.",
   "main": "./bin/index.js",
   "scripts": {

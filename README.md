@@ -1,1 +1,1 @@
-## Linode Object Storage CLI Tool.
+## Linode Object Storage CLI Tool

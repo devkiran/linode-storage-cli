@@ -6,12 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["linode", "object storage bucket", "linode cli", "linode bucket"],
+  "keywords": [
+    "linode",
+    "object storage bucket",
+    "linode cli",
+    "linode bucket"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "commander": "^8.3.0",
-    "node-fetch": "^3.0.0"
+    "node-fetch": "^3.0.0",
+    "preferences": "^2.0.2"
   },
   "bin": {
     "los": "./bin/index.js"

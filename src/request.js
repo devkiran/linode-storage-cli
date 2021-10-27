@@ -1,11 +1,10 @@
 import fetch, { Headers } from 'node-fetch';
-
-const accessToken = '';
+import { getAccessToken } from './token.js';
 
 const makeRequest = async (method, url, body = null) => {
   const headers = new Headers({
     'Content-Type': 'application/json',
-    Authorization: `Bearer ${accessToken}`,
+    Authorization: `Bearer ${getAccessToken()}`,
   });
 
   const params = {

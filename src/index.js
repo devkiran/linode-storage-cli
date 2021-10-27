@@ -2,6 +2,7 @@
 
 import { Command } from 'commander';
 import bucketCreate from './commands/bucket-create.js';
+import bucketList from './commands/bucket-list.js';
 import bucketRemove from './commands/bucket-remove.js';
 
 const cli = new Command();
@@ -13,6 +14,7 @@ cli
   .addHelpCommand(false)
   .helpOption(false);
 
+cli.addCommand(bucketList);
 cli.addCommand(bucketCreate);
 cli.addCommand(bucketRemove);
 

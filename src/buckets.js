@@ -22,7 +22,14 @@ const remove = async (label, cluster) => {
   return console.log(response);
 };
 
+const list = async () => {
+  const response = await makeRequest('GET', baseUrl);
+
+  return console.log(response);
+};
+
 export default {
   create,
   remove,
+  list,
 };

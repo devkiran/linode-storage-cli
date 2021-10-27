@@ -7,6 +7,6 @@ const program = new Command('bucket-list');
 
 program
   .description('Returns a list of all Buckets that you own.')
-  .action(buckets.list);
+  .action(buckets.getAll);
 
 export default program;

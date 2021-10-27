@@ -22,8 +22,14 @@ const remove = async (label, cluster) => {
   return console.log(response);
 };
 
-const list = async () => {
+const getAll = async () => {
   const response = await makeRequest('GET', baseUrl);
+
+  return console.log(response);
+};
+
+const getOne = async (label, cluster) => {
+  const response = await makeRequest('GET', `${baseUrl}/${cluster}/${label}`);
 
   return console.log(response);
 };
@@ -31,5 +37,6 @@ const list = async () => {
 export default {
   create,
   remove,
-  list,
+  getAll,
+  getOne,
 };

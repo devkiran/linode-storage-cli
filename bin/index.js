@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import bucketCreate from './commands/bucket-create.js';
-import bucketList from './commands/bucket-list.js';
-import bucketRemove from './commands/bucket-remove.js';
-import bucketView from './commands/bucket-view.js';
-import objectList from './commands/object-list.js';
+import bucketCreate from '../src/commands/bucket-create.js';
+import bucketList from '../src/commands/bucket-list.js';
+import bucketRemove from '../src/commands/bucket-remove.js';
+import bucketView from '../src/commands/bucket-view.js';
+import objectList from '../src/commands/object-list.js';
 
 const cli = new Command();
 

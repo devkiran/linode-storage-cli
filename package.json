@@ -1,12 +1,12 @@
 {
   "name": "linode-storage-cli",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Linode Object Storage CLI Tool.",
+  "main": "./bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["linode", "object storage bucket", "linode cli", "linode bucket"],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -14,7 +14,7 @@
     "node-fetch": "^3.0.0"
   },
   "bin": {
-    "jsonp": "./src/index.js"
+    "los": "./bin/index.js"
   },
   "type": "module"
 }

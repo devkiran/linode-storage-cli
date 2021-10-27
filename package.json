@@ -22,5 +22,13 @@
   "bin": {
     "los": "./bin/index.js"
   },
-  "type": "module"
+  "type": "module",
+  "files" : [
+    "bin",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devkiran/linode-storage-cli"
+  }
 }

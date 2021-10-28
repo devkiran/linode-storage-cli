@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
+import bucketAccessModify from '../src/commands/bucket-access-modify.js';
 import bucketCreate from '../src/commands/bucket-create.js';
 import bucketList from '../src/commands/bucket-list.js';
 import bucketRemove from '../src/commands/bucket-remove.js';
@@ -18,10 +19,13 @@ cli
   .helpOption(false);
 
 cli.addCommand(setToken);
+
 cli.addCommand(bucketList);
 cli.addCommand(bucketView);
 cli.addCommand(bucketCreate);
 cli.addCommand(bucketRemove);
+cli.addCommand(bucketAccessModify);
+
 cli.addCommand(objectList);
 
 cli.parse(process.argv);

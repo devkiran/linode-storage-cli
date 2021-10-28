@@ -34,9 +34,35 @@ const getOne = async (label, cluster) => {
   return console.log(response);
 };
 
+const updateAccess = async ({ label, cluster, acl, cors }) => {
+  if (acl === undefined && cors === undefined) {
+    console.log('You must provide either ACL or CORS setting.');
+    return;
+  }
+
+  const params = {};
+
+  if (acl) {
+    params['acl'] = acl;
+  }
+
+  if (cors) {
+    params['cors_enabled'] = cors === 'true';
+  }
+
+  const response = await makeRequest(
+    'POST',
+    `${baseUrl}/${cluster}/${label}/access`,
+    params
+  );
+
+  return console.log(response);
+};
+
 export default {
   create,
   remove,
   getAll,
   getOne,
+  updateAccess,
 };

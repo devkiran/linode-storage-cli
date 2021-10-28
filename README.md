@@ -48,3 +48,9 @@ Returns the contents of a bucket.
 ```
 los object-list <label> <cluster>
 ```
+
+Change basic CORS and ACL settings.
+
+```
+los bucket-access-modify --label=<bucket> --cluster=<cluster> --acl=<acl> --cors=<true|false>
+```
